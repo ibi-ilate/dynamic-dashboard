@@ -4,7 +4,8 @@
 
 body {
     margin: 0;
-    background: no-repeat center center fixed; 
+    min-height: 100vh;
+    background: #1f2937 url("https://images.unsplash.com/photo-1560008511-11c63416e52d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,6 +30,8 @@ div.top {
 
 h1.time {
     text-align: center;
+    font-size: clamp(3rem, 12vw, 8rem);
+    margin: 0;
 }
 
 div#crypto {
@@ -56,6 +59,7 @@ div#weather {
     justify-content: flex-end;
     align-self: flex-start;
     margin-top: -20px;
+    min-height: 80px;
 }
 
 div#weather > img {
